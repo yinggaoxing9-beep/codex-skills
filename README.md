@@ -5,10 +5,15 @@
 - 多来源信息检索、证据分级与交叉核验
 - 上市公司基本面、财报洞察与财务取证
 - 研究材料摘要、比较与信息整合
+- 技术讲解、管理决策、研究汇报、数据报告、融资与教学 PPT
+- 中文 HTML 专题报告与交互自阅报告
+- 品牌、设计系统、界面和视觉设计
 - Codex 上下文治理与 Token 节省
 - 长期记忆整理、冲突处理与过期管理
 
-技能调用名保持英文，正文和界面说明采用中文；必要的英文关键词会保留，以兼容中英文自动触发。
+当前收录 **26 个个人 Skills**，包括 **8 个 PPT 技能**和 **1 个 HTML 报告技能**，同步日期为 2026-10-22。系统内置和插件附带的技能不包含在本仓库中。
+
+技能调用名保持英文；中文增强入口和保留的上游英文入口并存，必要的英文关键词用于兼容中英文自动触发。
 
 ## 技能目录
 
@@ -24,6 +29,26 @@
 | `research-summarizer` | 已提供论文、报告和网页的结构化摘要 | `使用 $research-summarizer 比较这些报告` |
 | `context-budget` | 审计上下文膨胀并减少 Token 消耗 | `使用 $context-budget 审计当前配置` |
 | `memory-curator` | 管理 Codex 记忆、项目约定和任务交接 | `使用 $memory-curator 整理长期记忆` |
+| `presentation-studio` | PPT 总入口：梳理需求并路由到专业演示技能 | `使用 $presentation-studio 制作一份演示文稿` |
+| `technical-explainer-deck` | 技术讲解、架构说明、技术选型与内部培训 | `使用 $technical-explainer-deck 讲解 AI Infra 架构` |
+| `executive-decision-deck` | 管理层决策、项目立项、预算与方案比较 | `使用 $executive-decision-deck 制作项目立项汇报` |
+| `research-presentation` | 论文汇报、研究进展、组会与答辩 | `使用 $research-presentation 汇报这篇论文` |
+| `data-report-deck` | KPI、经营复盘、周月季报与数据故事 | `使用 $data-report-deck 制作季度经营复盘` |
+| `pitch-deck` | 融资 BP、商业模式与投资人路演 | `使用 $pitch-deck 制作融资路演材料` |
+| `teaching-deck` | 课程、工作坊、示例、练习与复习 | `使用 $teaching-deck 制作培训课件` |
+| `deck-review` | PPT 审阅、评分、验收、压缩与修复 | `使用 $deck-review 检查这份 PPT` |
+| `html-report` | 中文专题报告、研究解读、战略简报与交互自阅 | `使用 $html-report 制作一份独立 HTML 研究报告` |
+| `banner-design` | 社交媒体、广告、网站与印刷横幅 | `使用 $banner-design 设计活动横幅` |
+| `brand` | 品牌语气、视觉身份、品牌资产与一致性 | `使用 $brand 整理品牌规范` |
+| `design` | 综合视觉设计、标志、品牌物料与图标 | `使用 $design 设计品牌视觉物料` |
+| `design-system` | 设计 Token、组件规范与一致性设计 | `使用 $design-system 建立设计 Token` |
+| `hallmark` | 页面设计、审计、重设计与参考提取 | `使用 $hallmark 改进这个页面的视觉设计` |
+| `ui-styling` | shadcn/ui、Tailwind 与可访问界面实现 | `使用 $ui-styling 实现响应式界面` |
+| `ui-ux-pro-max` | UI/UX 决策、风格、配色、字体与交互 | `使用 $ui-ux-pro-max 设计产品管理界面` |
+
+PPT 任务类型明确时可以直接调用对应专业技能；类型不明确时从 `presentation-studio` 开始。`deck-review` 用于审阅已有演示，`html-report` 用于独立 HTML 报告。
+
+上述目录保存本地安装版本及其配套脚本、参考资料和资产。部分上游设计技能仍引用外部工具或其他技能，具体依赖以各自入口为准。
 
 ## 论文研究混合架构
 
@@ -66,6 +91,12 @@
 .\scripts\install.ps1 -Skills evidence-research,stock-analysis
 ```
 
+只安装这次更新的 PPT 和 HTML 技能：
+
+```powershell
+.\scripts\install.ps1 -Skills presentation-studio,technical-explainer-deck,executive-decision-deck,research-presentation,data-report-deck,pitch-deck,teaching-deck,deck-review,html-report
+```
+
 预览操作而不复制文件：
 
 ```powershell
@@ -104,4 +135,4 @@ C:\Users\<你的用户名>\.codex\skills\<skill-name>
 
 ## 来源与许可证
 
-本仓库包含基于开源项目改编的内容，详细来源见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。仓库内容按 MIT License 发布；上游内容仍保留其原始版权和许可条件。
+本仓库包含基于第三方项目改编或保留的内容，详细来源见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。本仓库自有内容按 MIT License 发布；第三方内容保留其原始版权和许可条件，不因同步而自动适用本仓库的 MIT 声明。

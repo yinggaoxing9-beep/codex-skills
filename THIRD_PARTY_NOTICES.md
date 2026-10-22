@@ -40,3 +40,20 @@
 - 改动：中文入口与界面元数据、Codex 适配、技能边界调整，以及部分工作流强化。
 
 上游 MIT License 可在对应项目中查看。仓库内 `references/SKILL.en.md` 是为回滚和升级对照保留的英文入口备份，并不表示上游仓库的完整镜像。
+
+## PPT 技能栈
+
+- 参考项目：[Akxan/ppt-agent-skill](https://github.com/Akxan/ppt-agent-skill)、[CacinieP/ppt-skills](https://github.com/CacinieP/ppt-skills)，均在上游来源记录中标为 MIT。
+- 相关技能：`technical-explainer-deck`、`deck-review`；其余演示技能组成按场景路由的本地工作流。
+- 参考认知负荷、叙事结构、视觉层级、中文字体、文本溢出、对比度、可编辑性和版式契约等思想；没有导入这些项目的完整生成链路或模板库。
+- 本次同步的是 2026-10-22 本地升级版本，保留入口、参考资料和审计脚本。
+
+## 设计技能本地快照
+
+- 来源集合：[dingdong905/design-skills](https://github.com/dingdong905/design-skills)，父仓库：[Stramony/design-skills](https://github.com/Stramony/design-skills)。
+- 相关技能：`banner-design`、`brand`、`design`、`design-system`、`hallmark`、`ui-styling`、`ui-ux-pro-max`。
+- 本次按本地安装内容同步，保留原有作者元数据、引用、数据文件和许可文件；不将其描述为全部由本仓库作者原创。
+- `banner-design`、`design`、`design-system` 的入口声明 MIT，并保留 claudekit 作者元数据。
+- `ui-styling` 的入口声明 MIT，随附 `LICENSE.txt` 为 Apache-2.0；保留两者，不声称已确定唯一适用许可。
+- `brand`、`hallmark`、`ui-ux-pro-max` 的本地入口未提供统一明确的许可证声明；本仓库 MIT 声明不替代其原始权利和许可条件。
+- 字体、图标及其他引用资源仍适用各自原始条款。

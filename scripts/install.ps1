@@ -9,14 +9,30 @@ $repositoryRoot = Split-Path -Parent $PSScriptRoot
 $manifest = @(
     "academic-search",
     "ai-computing-research",
+    "banner-design",
     "biomedical-evidence",
+    "brand",
     "context-budget",
+    "data-report-deck",
+    "deck-review",
+    "design",
+    "design-system",
     "evidence-research",
+    "executive-decision-deck",
     "financial-analyst",
+    "hallmark",
+    "html-report",
     "memory-curator",
+    "pitch-deck",
+    "presentation-studio",
+    "research-presentation",
     "research-toolkit",
     "research-summarizer",
-    "stock-analysis"
+    "stock-analysis",
+    "teaching-deck",
+    "technical-explainer-deck",
+    "ui-styling",
+    "ui-ux-pro-max"
 )
 
 $selectedSkills = if ($Skills -and $Skills.Count -gt 0) { $Skills } else { $manifest }
