@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "offline-audit-goal-closure",
+      "kind": "observed",
+      "files": [
+        "offline-audit-goal-closure.md"
+      ],
+      "scenario": "用户要求无源部署依赖自查，并纠正最新增量物料版本",
+      "preconditions": "存在代码、控制端运行时和仍在消费的节点 RPM 包，可进行只读检查和隔离 mock",
+      "expected": "纠正对象后继续原目标，读取真实归档及角色路径，交付可由正式步骤执行的修复方案；不把静态、mock 或已有机器状态冒充无源安装验收",
+      "limits": "不继承历史环境、物料版本或授权；未验证真实 RPM 依赖安装，实施需重新确认范围",
+      "source": "2026-10-09 用户会话与本地归档/control-flow 核验，脱敏复盘",
+      "verified_at": "2026-10-09"
+    },
+    {
+      "id": "checksum-crlf-delivery",
+      "kind": "observed",
+      "files": [
+        "checksum-crlf-delivery.md"
+      ],
+      "scenario": "Windows生成Linux部署物料及外部SHA256清单，实际校验将行尾CR识别为文件名的一部分",
+      "preconditions": "存在最终归档、清单原始字节及Linux隔离验收环境；只在获准范围检查或更新",
+      "expected": "显式LF和无BOM写入；最终清单标准校验通过才解压；现场报告CHECK_OK和UPDATE_OK，后续部署未验收",
+      "limits": "不继承历史节点、路径、物料版本或授权；代码更新成功不代表节点准备或部署成功",
+      "source": "2026-10-14用户反馈、本地清单字节、Linux临时fixture以及用户回传的更新器输出，脱敏",
+      "verified_at": "2026-10-14"
+    },
+    {
+      "id": "terminal-paste-review",
+      "kind": "observed",
+      "files": [
+        "terminal-paste-review.md"
+      ],
+      "scenario": "生产高权限终端直接粘贴复杂查询脚本，用户要求固化文件交付与线上风险意识",
+      "preconditions": "有用户提供的复盘及已明确的生产脚本交付要求；本次不连接生产环境",
+      "expected": "复杂采集采用可审阅文件和简短入口，执行前审核验证并评估误执行、权限和查询负载；文档记载检查后无业务影响",
+      "limits": "历史结论来自用户复盘，未独立复查生产；不继承目标、权限、并发阈值或事故认定",
+      "source": "2026-10-23 用户提供的生产 root 会话长脚本执行复盘与会话纠正，脱敏整理",
+      "verified_at": "2026-10-23"
+    }
+  ]
+}

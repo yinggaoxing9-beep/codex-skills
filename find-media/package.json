@@ -1,0 +1,12 @@
+{
+  "name": "find-media-local",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "trace.moe-id": "2.0.0",
+    "sharp": "0.35.4"
+  }
+}

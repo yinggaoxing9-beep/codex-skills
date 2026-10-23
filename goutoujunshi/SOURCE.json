@@ -1,0 +1,33 @@
+{
+  "sourceRepository": "https://github.com/shengjidaguai-china/goutoujunshi",
+  "sourceCommit": "6db7354a4002dc7c448a9c87ffdad8132570c9d3",
+  "importedAt": "2026-10-18",
+  "upstreamAttribution": "powerycy",
+  "licenseStatus": "MIT; upstream LICENSE retained verbatim as LICENSE.txt",
+  "sourceFiles": [
+    {
+      "path": "SKILL.md",
+      "sha256": "825edd66bed33ce514c12d0cd3f2f002417c7aa357b58a6aae658cad26f6e083"
+    },
+    {
+      "path": "references/practical/实战话术编排器：从一句回复到后续分支.md",
+      "sha256": "83014b57788a4d6cfe4cb82fe224d81ee5e9ac6d6e84f7ac67097d06828cb7fe"
+    },
+    {
+      "path": "references/practical/场景感、松弛感与社交校准：从接话到关系推进.md",
+      "sha256": "01864b3713a8b25bd310a3678b44d2e937ce3a2817c381090d8ba71ab534c4d5"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "f336b7d0101d93b47ec1964aaf3c4ab12dc582638be9501fc883801a51ed0367"
+    }
+  ],
+  "adaptations": [
+    "Select reply goal, reciprocity, next-step and invitation methods",
+    "Exclude mandatory personality/scoring intake, fixed stages, memory scripts and ChatLab",
+    "Preserve existing task scope and human versus AI attribution; allow text creativity"
+  ],
+  "upstreamScriptsImported": false,
+  "runtimeDependenciesAdded": [],
+  "validationBoundary": "Structure and local packaging only; no independent behavioral or human conversion evidence."
+}

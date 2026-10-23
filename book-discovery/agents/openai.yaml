@@ -1,0 +1,4 @@
+interface:
+  display_name: "找书与版本核验"
+  short_description: "个性化荐书与图书检索，核对具体版本、实际阅读入口和可追溯的正文证据"
+  default_prompt: "使用 $book-discovery 推荐或查找适合我的书，核对版本并补查首选书目的阅读入口，明确哪些链接只是书目介绍。"

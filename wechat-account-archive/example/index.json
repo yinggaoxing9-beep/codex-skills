@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "public-article-validation",
+      "kind": "observed",
+      "files": [
+        "validation.md"
+      ],
+      "scenario": "检查已知公众号样本的公开正文、图片与归档报告，区分单篇成功和全历史验收",
+      "preconditions": "用户给定公开原文链接；本机允许只读公开网络；实际数据保存在 Skill/Git 之外",
+      "expected": "已观察到账号昵称与作者署名，单篇正文及18张图片归档成功；全历史目录未验证，报告不宣称完整",
+      "limits": "不是默认账号、默认路径或后续授权；公众平台登录、真实搜索身份绑定、目录分页计数单位与全历史仍待验证；外部 reader 仅代码核验和合成测试",
+      "source": "用户给定 mp.weixin.qq.com 链接及 archive.py 本机真实输出；没有复制外部项目代码",
+      "verified_at": "2026-10-21"
+    },
+    {
+      "id": "single-link-routing",
+      "kind": "observed",
+      "files": [
+        "link-reading.md"
+      ],
+      "scenario": "单篇微信链接直接读取及缓存路径核验，解释账号归档与单篇阅读的路由区别",
+      "preconditions": "用户提供公开文章链接；允许网络及独立数据目录写入；无公众平台登录前提",
+      "expected": "本次脚本 HTTP 读取成功，返回可读正文路径和真实获取方式；41 项行为测试通过",
+      "limits": "默认未下载图片；不证明全历史完整或未来无需验证；浏览器兜底本轮仅离线测试",
+      "source": "用户截图的 URL、archive.py 实测和 unittest 输出",
+      "verified_at": "2026-10-22"
+    }
+  ]
+}

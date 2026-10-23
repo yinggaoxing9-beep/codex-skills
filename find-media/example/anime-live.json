@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "task_type": "anime",
+  "inputs": [
+    {
+      "type": "image",
+      "source": "https://images.plurk.com/32B15UXxymfSMwKGTObY5e.jpg",
+      "sha256": "822538cd86945324da503f16b16dddd1bdb011d0077fa2f8d71ea69db722c4ec",
+      "read_status": "read",
+      "provenance": "trace.moe official API documentation demo"
+    }
+  ],
+  "segments": [
+    {
+      "id": "still-1",
+      "input_range": null,
+      "work": {
+        "name": "ご注文はうさぎですか？？",
+        "aliases": [
+          "Is the Order a Rabbit?? Season 2"
+        ],
+        "ids": {
+          "anilist": 21034
+        }
+      },
+      "season": 2,
+      "episode": {
+        "provider_value": 1,
+        "independent_verification": false
+      },
+      "status": "verified_anchor",
+      "confirmation": {
+        "title": "confirmed",
+        "episode": "unverified",
+        "time": "confirmed"
+      },
+      "confirmation_evidence": {
+        "title": [
+          "api",
+          "visual"
+        ],
+        "time": [
+          "api",
+          "visual"
+        ]
+      },
+      "evidence": [
+        {
+          "id": "api",
+          "source": "https://api.trace.moe/search?anilistInfo",
+          "checked_at": "2026-10-21",
+          "observation": "Vector query returned AniList 21034, episode candidate 1, at=279.7795. Episode is provider metadata, not independently watched original episode.",
+          "provider_similarity": 0.9922267343483719,
+          "provider_raw": {
+            "filename": "Gochuumon wa Usagi Desuka 2 - 01 (BD 1280x720 x264 AAC).mp4",
+            "episode": 1,
+            "episode_start": 1,
+            "episode_end": 1,
+            "at": 279.7795,
+            "from": 272.1886,
+            "to": 282.6574
+          }
+        },
+        {
+          "id": "visual",
+          "source": "trace.moe result preview image and 8.01s preview video; transient URLs expired after query",
+          "checked_at": "2026-10-21",
+          "observation": "Original and preview show same purple-haired character, eyes closed smiling with hands at chest, purple bow, camera overlay, sparkles and cup shelf. Viewed preview frames at 3s (eyes open) and 5s (matching smile). Initial HTTP 403; a bounded later read with client User-Agent succeeded with 200. No original full episode inspected.",
+          "preview_read_status": "read"
+        }
+      ],
+      "anchors": [
+        {
+          "input_time": 0,
+          "source_time": 279.7795,
+          "evidence_id": "visual",
+          "reviewed": true
+        }
+      ],
+      "time_basis": {
+        "version": "trace.moe database file: Gochuumon wa Usagi Desuka 2 - 01 (BD 1280x720 x264 AAC).mp4",
+        "clock": "trace.moe at; not universal streaming clock",
+        "precision": "Provider returned 4 decimals; visual anchor only, no independently measured bound",
+        "error": null
+      },
+      "watch_entries": [
+        {
+          "url": "https://www.hidive.com/season/19711",
+          "kind": "work_page",
+          "region": "unknown",
+          "checked_at": "2026-10-21",
+          "availability": "unknown",
+          "note": "Original Season 2 URL redirected here; body not readable through search connector, playback unverified."
+        }
+      ]
+    }
+  ],
+  "process": [
+    {
+      "provider": "trace.moe",
+      "status": "ok",
+      "search_attempts": 1,
+      "checked_at": "2026-10-21"
+    },
+    {
+      "provider": "trace.moe preview",
+      "status": "initial_403_then_200",
+      "checked_at": "2026-10-21"
+    }
+  ],
+  "coverage": {
+    "input_images": 1,
+    "queried_images": 1,
+    "visually_reviewed_images": 1,
+    "reviewed_preview_frames": 2,
+    "full_original_episode": false
+  },
+  "unresolved": [
+    "集数未独立对照原集",
+    "没有原片连续区间",
+    "观看地区和实际可播性未知"
+  ],
+  "next_steps": [
+    "需跨发行版精确定位时，只补对应候选原集或匹配版本字幕"
+  ]
+}

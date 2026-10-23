@@ -1,0 +1,974 @@
+{
+  "source_repository": "dingdong905/codex-skills",
+  "source_commit": "12ca95270c8004d67cf39aeb251caceac6db0936",
+  "target_repository": "yinggaoxing9-beep/codex-skills",
+  "target_base": "69ed2a825c5fa26c6b9c95aee8bd511187555099",
+  "skills": [
+    "alpha-hypothesis-research",
+    "android-phone-ops",
+    "book-discovery",
+    "brand-collateral",
+    "evidence-driven-valuation",
+    "feishu-document-output",
+    "find-media",
+    "find-skills",
+    "fundamental-signal-intake",
+    "goutoujunshi",
+    "handoff",
+    "humanizer-zh",
+    "investment-research",
+    "logo-design",
+    "social-conversation-coach",
+    "sre-command-delivery",
+    "tech-mentor",
+    "wechat-account-archive"
+  ],
+  "dependencies": [
+    "research-toolkit/example/handoff-demo.md",
+    "research-toolkit/example/handoff-demo.py",
+    "research-toolkit/example/index.json",
+    "research-toolkit/references/book-evidence-schema.md",
+    "research-toolkit/references/handoff-contract.md",
+    "research-toolkit/references/handoff.schema.json",
+    "research-toolkit/scripts/bookctl.py",
+    "research-toolkit/scripts/validate_handoff.py",
+    "research-toolkit/tests/test_bookctl.py",
+    "research-toolkit/tests/test_handoff.py",
+    "research-toolkit/tests/test_handoff_demo.py"
+  ],
+  "files": [
+    {
+      "path": "alpha-hypothesis-research/SKILL.md",
+      "git_blob_sha1": "87aed398b932f4ad768ee7c339a9f5b5d1c9f0e2",
+      "size": 6327
+    },
+    {
+      "path": "alpha-hypothesis-research/example/index.json",
+      "git_blob_sha1": "71d3eff90e5fb994997b298c062c0f5570f9ff5d",
+      "size": 964
+    },
+    {
+      "path": "alpha-hypothesis-research/example/quant-engineering.md",
+      "git_blob_sha1": "9e44d16bc2b7d4b7b1eba62bcd0d8334e9b070fd",
+      "size": 4155
+    },
+    {
+      "path": "alpha-hypothesis-research/references/project-adapter.md",
+      "git_blob_sha1": "46e0d7ac356f698d23de517eaeafe5789442ac77",
+      "size": 4249
+    },
+    {
+      "path": "android-phone-ops/SKILL.md",
+      "git_blob_sha1": "f44bfc7cf91f0f240ba719a0f3e972c7d849fccf",
+      "size": 5334
+    },
+    {
+      "path": "android-phone-ops/agents/openai.yaml",
+      "git_blob_sha1": "76cfb06716ffb47723bc1ce07c94b38e81882b3f",
+      "size": 123
+    },
+    {
+      "path": "android-phone-ops/example/index.json",
+      "git_blob_sha1": "4ad659d62ceabfa98d7562248d1891ee2e7cb6f6",
+      "size": 2547
+    },
+    {
+      "path": "android-phone-ops/example/tara-adb-efficiency.md",
+      "git_blob_sha1": "883f0833eaa676d5599fa9adb5b871e2d781bb0a",
+      "size": 2692
+    },
+    {
+      "path": "android-phone-ops/example/tara-social.md",
+      "git_blob_sha1": "237e0bd22d249d8ef4859b7f2c23903a64f9f4f0",
+      "size": 11349
+    },
+    {
+      "path": "android-phone-ops/example/xiaomi14-jev-v13.md",
+      "git_blob_sha1": "424499e071a6f6e17b855f4081d03a7ccea3dc00",
+      "size": 4065
+    },
+    {
+      "path": "android-phone-ops/references/adb-ui-efficiency.md",
+      "git_blob_sha1": "fa7eb9ecf214e15869624ad24926b2c49fced071",
+      "size": 5695
+    },
+    {
+      "path": "android-phone-ops/references/social-conversation-evidence.md",
+      "git_blob_sha1": "4ebc8695361e980bc07e86a4cd82083020c3f38c",
+      "size": 706
+    },
+    {
+      "path": "book-discovery/SKILL.md",
+      "git_blob_sha1": "3566281e5df0dacee0a81195a75a9f7a262b3c3e",
+      "size": 6322
+    },
+    {
+      "path": "book-discovery/agents/openai.yaml",
+      "git_blob_sha1": "1814b636243aaa0b4149e59813a1b260b6ad1f10",
+      "size": 341
+    },
+    {
+      "path": "book-discovery/example/catalog-boundaries.md",
+      "git_blob_sha1": "9d684ba1651487cd1acc443128b623b22449ea3d",
+      "size": 2083
+    },
+    {
+      "path": "book-discovery/example/index.json",
+      "git_blob_sha1": "405e748503dcb726427664f314408fa94c89ea0e",
+      "size": 851
+    },
+    {
+      "path": "book-discovery/references/sources.md",
+      "git_blob_sha1": "fb3db72de30315e1338d6302251873ba5b01e8b0",
+      "size": 3275
+    },
+    {
+      "path": "brand-collateral/SKILL.md",
+      "git_blob_sha1": "a8366e955191e2686d3196ee4d19536725acccfd",
+      "size": 2196
+    },
+    {
+      "path": "brand-collateral/SOURCE.json",
+      "git_blob_sha1": "529790eb9b64c106d0ac1a722785576a76aea359",
+      "size": 897
+    },
+    {
+      "path": "brand-collateral/agents/openai.yaml",
+      "git_blob_sha1": "e03f68cf57033f107497e1f4a4a812627c350725",
+      "size": 298
+    },
+    {
+      "path": "brand-collateral/data/deliverables.csv",
+      "git_blob_sha1": "bf139ee1dfe28755428104a3821ef75686f7ad0c",
+      "size": 13385
+    },
+    {
+      "path": "brand-collateral/data/domains.json",
+      "git_blob_sha1": "8d1256dd57cd874374105844e436e1b544637be8",
+      "size": 1705
+    },
+    {
+      "path": "brand-collateral/data/industries.csv",
+      "git_blob_sha1": "ecb02b3f5bad70df2ea443d24f2b9d65e1f0a7a5",
+      "size": 4935
+    },
+    {
+      "path": "brand-collateral/data/mockup-contexts.csv",
+      "git_blob_sha1": "a1592c2a3543aeb8456b925fba2446c44bc55b1a",
+      "size": 5205
+    },
+    {
+      "path": "brand-collateral/data/styles.csv",
+      "git_blob_sha1": "7ba7ee875ca88368f8ee5188be856b7b5da26cac",
+      "size": 5967
+    },
+    {
+      "path": "brand-collateral/references/consistency.md",
+      "git_blob_sha1": "4754b7eac2d8e03eb02a280f22c5b05660eef0b3",
+      "size": 719
+    },
+    {
+      "path": "brand-collateral/references/mockups.md",
+      "git_blob_sha1": "77471c2f226b517bbee218668cc3a3b78b0b3fd8",
+      "size": 765
+    },
+    {
+      "path": "brand-collateral/references/social-assets.md",
+      "git_blob_sha1": "9ce39ab6fcc21fe50b950fe72c2af37bbeb034b5",
+      "size": 681
+    },
+    {
+      "path": "brand-collateral/references/specifications.md",
+      "git_blob_sha1": "cba772e80229ad60c2c36c74f1f4cce94c929f61",
+      "size": 1410
+    },
+    {
+      "path": "brand-collateral/scripts/search.py",
+      "git_blob_sha1": "97e2e5df6607f4665e70392d54ed3af54dcd28cd",
+      "size": 3710
+    },
+    {
+      "path": "brand-collateral/scripts/tests/test_search.py",
+      "git_blob_sha1": "d8fb14550f033ff5fad0e8c27951e80c8a0b366b",
+      "size": 3314
+    },
+    {
+      "path": "evidence-driven-valuation/SKILL.md",
+      "git_blob_sha1": "eaf9bd318046237b22c58e3fa86c2af33823888b",
+      "size": 1944
+    },
+    {
+      "path": "evidence-driven-valuation/agents/openai.yaml",
+      "git_blob_sha1": "325d8c5f3f8642100dc6062f86ac7c279e3d7fdc",
+      "size": 284
+    },
+    {
+      "path": "evidence-driven-valuation/example/audit-notes.md",
+      "git_blob_sha1": "749a95cdb36ada1bf5737768cac32f429e9c4ec6",
+      "size": 5493
+    },
+    {
+      "path": "evidence-driven-valuation/example/index.json",
+      "git_blob_sha1": "22a3bcb396fd55354aaec6fffa4f3c70c5251cd8",
+      "size": 1285
+    },
+    {
+      "path": "evidence-driven-valuation/example/synthetic-handoff.json",
+      "git_blob_sha1": "6e67e6ace4b11a9f3fc942c8640470dce86499b0",
+      "size": 28746
+    },
+    {
+      "path": "evidence-driven-valuation/references/causal-conversion.md",
+      "git_blob_sha1": "8d330dc6f03b4c92a68b031c457f0a8b66723a22",
+      "size": 1031
+    },
+    {
+      "path": "evidence-driven-valuation/references/evidence-gate.md",
+      "git_blob_sha1": "16fb003c77312d993bd57b7cd9f270409c610f76",
+      "size": 1363
+    },
+    {
+      "path": "evidence-driven-valuation/references/industry-routing.md",
+      "git_blob_sha1": "d74ca4f5d1519ff01d937069cbfe00b1ab60d164",
+      "size": 804
+    },
+    {
+      "path": "evidence-driven-valuation/references/known-limitations.md",
+      "git_blob_sha1": "8d9bc6e4dc53d73ca968584af33f640cbc4a2aa6",
+      "size": 1376
+    },
+    {
+      "path": "evidence-driven-valuation/references/special-valuations.md",
+      "git_blob_sha1": "bc5a14657316f04b2255a950b2e7e4d50b29ebff",
+      "size": 1533
+    },
+    {
+      "path": "evidence-driven-valuation/references/valuation-input-schema.md",
+      "git_blob_sha1": "e34fc95f9c7ef52df440734219b7bcd8afabe058",
+      "size": 5347
+    },
+    {
+      "path": "evidence-driven-valuation/scripts/evidence_contract.py",
+      "git_blob_sha1": "b8eaa08cfe83b92fb32eb9db527c28ff06cfffc1",
+      "size": 21699
+    },
+    {
+      "path": "evidence-driven-valuation/scripts/test_evidence_contract.py",
+      "git_blob_sha1": "1ffc0294e7a6de52a81d581dce6023d5945143f8",
+      "size": 23403
+    },
+    {
+      "path": "evidence-driven-valuation/scripts/test_valuation_engine.py",
+      "git_blob_sha1": "6cebf7cb35277fd1eadf35523c4f33d467ea0da0",
+      "size": 6028
+    },
+    {
+      "path": "evidence-driven-valuation/scripts/valuation_engine.py",
+      "git_blob_sha1": "a05fedc7067e109ee33fb412dae9f946b7179f12",
+      "size": 22610
+    },
+    {
+      "path": "feishu-document-output/SKILL.md",
+      "git_blob_sha1": "29ab9a04bca00d1b927a3e93f41d865d7096a93b",
+      "size": 3404
+    },
+    {
+      "path": "feishu-document-output/agents/openai.yaml",
+      "git_blob_sha1": "9e771f0c183f1c366a359f62f34ba1ca0c416cb3",
+      "size": 278
+    },
+    {
+      "path": "feishu-document-output/assets/templates/acceptance-standard.md",
+      "git_blob_sha1": "7f3d7ca8d2d4fda268c824b5a660452aab075ad0",
+      "size": 2352
+    },
+    {
+      "path": "feishu-document-output/assets/templates/change-plan.md",
+      "git_blob_sha1": "b9d8c903d645def83faf187ed3f96e0da99e24bf",
+      "size": 2614
+    },
+    {
+      "path": "feishu-document-output/assets/templates/deployment-guide.md",
+      "git_blob_sha1": "d9e7d9acb1b4274b434b75be6df7c19b10618ca4",
+      "size": 2111
+    },
+    {
+      "path": "feishu-document-output/assets/templates/incident-postmortem.md",
+      "git_blob_sha1": "6330447c6b4206e8fbd3a75ce7da23b715f168df",
+      "size": 2254
+    },
+    {
+      "path": "feishu-document-output/assets/templates/proposal-rfc-poc.md",
+      "git_blob_sha1": "c50813d18b62197d0d34fdf8ecd0c9cd6f2f5e7f",
+      "size": 3007
+    },
+    {
+      "path": "feishu-document-output/assets/templates/sop-runbook.md",
+      "git_blob_sha1": "9e80df25f16a56859dabaec76e60d7e20822db66",
+      "size": 2091
+    },
+    {
+      "path": "feishu-document-output/references/document-profiles.md",
+      "git_blob_sha1": "accdde9434cc6221dd9aea1fcd21ffb9b468f1c0",
+      "size": 7416
+    },
+    {
+      "path": "find-media/.gitignore",
+      "git_blob_sha1": "5d39dd9d64836f5b8004679c19c552eaf5808d9d",
+      "size": 37
+    },
+    {
+      "path": "find-media/SKILL.md",
+      "git_blob_sha1": "38a6689c324d7d8088a718613d7bed21435a8e83",
+      "size": 3703
+    },
+    {
+      "path": "find-media/agents/openai.yaml",
+      "git_blob_sha1": "1406b80a599f3719fc84c1f6cff74c3987a96b12",
+      "size": 305
+    },
+    {
+      "path": "find-media/example/anime-live.json",
+      "git_blob_sha1": "f9cafea479e71f587d8744d4aab059c699b733ea",
+      "size": 4078
+    },
+    {
+      "path": "find-media/example/game-candidate-feedback.json",
+      "git_blob_sha1": "b5a32675317f148ddfd1f9e35f8dd1ca713743b4",
+      "size": 3770
+    },
+    {
+      "path": "find-media/example/index.json",
+      "git_blob_sha1": "985c4640e53c07f95e999128d79474b02072eccc",
+      "size": 2175
+    },
+    {
+      "path": "find-media/example/plot-title-only.json",
+      "git_blob_sha1": "14a52a338e5689a3d2bd37bffcc60c67cc60102b",
+      "size": 1769
+    },
+    {
+      "path": "find-media/example/validation.md",
+      "git_blob_sha1": "800746c241bd7f467493f84ec10f1cd07e914100",
+      "size": 4085
+    },
+    {
+      "path": "find-media/package-lock.json",
+      "git_blob_sha1": "947c2730192c54c85b979040ce6512ed96868d9e",
+      "size": 21227
+    },
+    {
+      "path": "find-media/package.json",
+      "git_blob_sha1": "8b8536a4ad749d8d1100f877f3bb7d93afd4dcbb",
+      "size": 199
+    },
+    {
+      "path": "find-media/references/games.md",
+      "git_blob_sha1": "9b7042ac0b27c6f2301ca1a8be566a3fddc706bd",
+      "size": 1915
+    },
+    {
+      "path": "find-media/references/result-contract.md",
+      "git_blob_sha1": "e57cce98e0672e9668ad8445461ac1ff6e423719",
+      "size": 2816
+    },
+    {
+      "path": "find-media/references/screen-media.md",
+      "git_blob_sha1": "87b61e1bcf72febbe1b255e23132fbedacc5a6d1",
+      "size": 2839
+    },
+    {
+      "path": "find-media/references/sources.md",
+      "git_blob_sha1": "0eef74d0e1e0f4fa8ce740953c59993517384da7",
+      "size": 3629
+    },
+    {
+      "path": "find-media/references/tools.md",
+      "git_blob_sha1": "2ac3e81a3e9267e256e17ed649c884a24794b31f",
+      "size": 5463
+    },
+    {
+      "path": "find-media/requirements-media.txt",
+      "git_blob_sha1": "66f3f407d3b8ec78117c7a23b24f1ef41bbdc558",
+      "size": 110
+    },
+    {
+      "path": "find-media/scripts/common.py",
+      "git_blob_sha1": "84716d7ede320198a389ad79de524a608d8b6c9f",
+      "size": 1712
+    },
+    {
+      "path": "find-media/scripts/contract.py",
+      "git_blob_sha1": "0120bb2c6df04c6e1ed906a063515b00705a6478",
+      "size": 8476
+    },
+    {
+      "path": "find-media/scripts/find_media.py",
+      "git_blob_sha1": "ce11287552caea0cf02f2d442e5f41ad58513d10",
+      "size": 5840
+    },
+    {
+      "path": "find-media/scripts/media.py",
+      "git_blob_sha1": "dab7c079ac0500e524fa5609dd64cf8abcb57856",
+      "size": 9743
+    },
+    {
+      "path": "find-media/scripts/subtitles.py",
+      "git_blob_sha1": "a9f6b9dbcdbd14ba3022187adc0870f76a827c23",
+      "size": 3219
+    },
+    {
+      "path": "find-media/scripts/trace-vector.mjs",
+      "git_blob_sha1": "0baffc705831dedfbd61779028e0cac8977f7b3f",
+      "size": 986
+    },
+    {
+      "path": "find-media/scripts/trace_search.py",
+      "git_blob_sha1": "3fe5752b65400ac84f9bacd8526c304c231c5b25",
+      "size": 8471
+    },
+    {
+      "path": "find-media/tests/test_find_media.py",
+      "git_blob_sha1": "8b48ea4b69b4a396cdd4f2127aaf08720d6e7138",
+      "size": 17032
+    },
+    {
+      "path": "find-skills/LICENSE.txt",
+      "git_blob_sha1": "eabe3008f6c0275929faa8b07d406e82717648cc",
+      "size": 1069
+    },
+    {
+      "path": "find-skills/SKILL.md",
+      "git_blob_sha1": "281d15458526a17d76c193ed0b0935b2823a964a",
+      "size": 2120
+    },
+    {
+      "path": "find-skills/SOURCE.json",
+      "git_blob_sha1": "56ee403947d9f47832d2bfc523063e5cb0b48c16",
+      "size": 799
+    },
+    {
+      "path": "find-skills/agents/openai.yaml",
+      "git_blob_sha1": "756c30f4f89146eb3b29f6565eda225c9fe9b88a",
+      "size": 270
+    },
+    {
+      "path": "find-skills/references/integration.md",
+      "git_blob_sha1": "69c54215b919aeb6ac79f858e648cdb2f8fda80a",
+      "size": 2100
+    },
+    {
+      "path": "find-skills/references/search.md",
+      "git_blob_sha1": "7a30a3cc4831734ee486eb61ebb54e4c1a322af7",
+      "size": 1374
+    },
+    {
+      "path": "fundamental-signal-intake/SKILL.md",
+      "git_blob_sha1": "376dc897cd8f6718e95c46d9ae57010c8c46ffbf",
+      "size": 1457
+    },
+    {
+      "path": "fundamental-signal-intake/agents/openai.yaml",
+      "git_blob_sha1": "00fcd3f91fc47de86c0e8ce1a1dc66aaead9547c",
+      "size": 354
+    },
+    {
+      "path": "fundamental-signal-intake/references/evidence-ledger.md",
+      "git_blob_sha1": "0426086ac9467b453eb600ffd909cd6d37d69855",
+      "size": 2130
+    },
+    {
+      "path": "fundamental-signal-intake/references/provider-contract.md",
+      "git_blob_sha1": "b479d15f6387ede181cbca5d13337e04751c74c4",
+      "size": 855
+    },
+    {
+      "path": "fundamental-signal-intake/references/source-matrix.md",
+      "git_blob_sha1": "a4fbd9ae6dca0cb7966a0be7c669736487cb8c8e",
+      "size": 3641
+    },
+    {
+      "path": "fundamental-signal-intake/scripts/test_validate_ledger.py",
+      "git_blob_sha1": "04fb85a081f4eaf5b8394e9eb3beee17274bbf2f",
+      "size": 2433
+    },
+    {
+      "path": "fundamental-signal-intake/scripts/validate_ledger.py",
+      "git_blob_sha1": "1353db8cdf545a6b832740109deba13fc1e992d8",
+      "size": 7425
+    },
+    {
+      "path": "goutoujunshi/LICENSE.txt",
+      "git_blob_sha1": "bfc9d99fb47f85bc00ca9231383b4fe097a5a9e1",
+      "size": 1065
+    },
+    {
+      "path": "goutoujunshi/SKILL.md",
+      "git_blob_sha1": "35e7b1862eb913626ca40dafb879ac6a848190d0",
+      "size": 3951
+    },
+    {
+      "path": "goutoujunshi/SOURCE.json",
+      "git_blob_sha1": "1bf2589345130309f4c114b2827ad615419bae37",
+      "size": 1414
+    },
+    {
+      "path": "goutoujunshi/agents/openai.yaml",
+      "git_blob_sha1": "f0174fc49615280a742a71554bd07aaac2ee944d",
+      "size": 317
+    },
+    {
+      "path": "goutoujunshi/example/index.json",
+      "git_blob_sha1": "c9278f20db09358c113d109faf08ba1241cd1c0a",
+      "size": 726
+    },
+    {
+      "path": "goutoujunshi/example/reply-branches.md",
+      "git_blob_sha1": "d6fef53bf7a4a45728d0abd055d1d95915b6a870",
+      "size": 1420
+    },
+    {
+      "path": "goutoujunshi/references/reply-and-next-step.md",
+      "git_blob_sha1": "8e2f0a73bd12e5984af4d5a6982a12a3faee0de3",
+      "size": 2294
+    },
+    {
+      "path": "handoff/SKILL.md",
+      "git_blob_sha1": "76481f13d017a9541780fe5e7094a984318c8442",
+      "size": 5770
+    },
+    {
+      "path": "handoff/SOURCE.json",
+      "git_blob_sha1": "30ff715d44a7066036636ddc4530635f99c216d1",
+      "size": 3117
+    },
+    {
+      "path": "handoff/THIRD_PARTY_NOTICES.txt",
+      "git_blob_sha1": "972ac612598b002677a399a296e147fde7190b5a",
+      "size": 2330
+    },
+    {
+      "path": "handoff/agents/openai.yaml",
+      "git_blob_sha1": "0d69937bc0e6d4fca3abf3b6f646529bc5f55040",
+      "size": 259
+    },
+    {
+      "path": "handoff/example/index.json",
+      "git_blob_sha1": "f23aacf401c8e903505c2c2a8d313f99c83c0820",
+      "size": 784
+    },
+    {
+      "path": "handoff/example/stale-workspace.md",
+      "git_blob_sha1": "4646b91ef093e066df0e63e743c4adb505c76c8b",
+      "size": 1077
+    },
+    {
+      "path": "handoff/references/external-options.md",
+      "git_blob_sha1": "e20b17d72ccffcf87bbc493f6b7c02d1ccf41c7e",
+      "size": 2045
+    },
+    {
+      "path": "handoff/references/state-check.md",
+      "git_blob_sha1": "c179f81e142d3df2f096dc72ae3581d3cee41266",
+      "size": 3018
+    },
+    {
+      "path": "handoff/scripts/handoff_state.py",
+      "git_blob_sha1": "631a87d586468e5140e31421fd5961c2c2136c2c",
+      "size": 9220
+    },
+    {
+      "path": "handoff/templates/handoff.md",
+      "git_blob_sha1": "032bdd918a0430ce8e371a6e772aba5af2f9d092",
+      "size": 1270
+    },
+    {
+      "path": "handoff/tests/test_handoff_state.py",
+      "git_blob_sha1": "f6506d26c89f27f9df893ca9a94f320fb161e860",
+      "size": 5302
+    },
+    {
+      "path": "humanizer-zh/LICENSE.txt",
+      "git_blob_sha1": "e43848adc64286ff652e9be646e18ae0606162c7",
+      "size": 1063
+    },
+    {
+      "path": "humanizer-zh/SKILL.md",
+      "git_blob_sha1": "4886bdc289b90034b66fa89d8cf42b8ec4b2a1bb",
+      "size": 2884
+    },
+    {
+      "path": "humanizer-zh/SOURCE.json",
+      "git_blob_sha1": "b3e6db07c5720c2b9695982c7270ac3dc0f3ebbf",
+      "size": 951
+    },
+    {
+      "path": "humanizer-zh/agents/openai.yaml",
+      "git_blob_sha1": "95afb228ac65bdb25b1565772fdd0ae7614298b3",
+      "size": 291
+    },
+    {
+      "path": "humanizer-zh/example/index.json",
+      "git_blob_sha1": "64e939cf3106a0fea053745630d4183aa3c40805",
+      "size": 709
+    },
+    {
+      "path": "humanizer-zh/example/meaning-preservation.md",
+      "git_blob_sha1": "83a2bd669abc2729369e91c65c9542b707f26c31",
+      "size": 1052
+    },
+    {
+      "path": "humanizer-zh/references/editing-checks.md",
+      "git_blob_sha1": "2544defc987b1b6838f8fe7729fdb76d450c3df4",
+      "size": 1660
+    },
+    {
+      "path": "investment-research/SKILL.md",
+      "git_blob_sha1": "10bf22dff15cd75a03a764e0fb536ef73f688e8e",
+      "size": 3638
+    },
+    {
+      "path": "investment-research/example/index.json",
+      "git_blob_sha1": "7785fd5221ba4aa7366e17b938c8e3616a7f85ac",
+      "size": 706
+    },
+    {
+      "path": "investment-research/example/quant-engineering.md",
+      "git_blob_sha1": "1e9ff08572060a84dba3c1e0ac80d52922ae3a4b",
+      "size": 4263
+    },
+    {
+      "path": "investment-research/references/handoff.md",
+      "git_blob_sha1": "636ad4ccec1ef89cf19885ee636973522ef373bc",
+      "size": 1989
+    },
+    {
+      "path": "logo-design/SKILL.md",
+      "git_blob_sha1": "0d8b72c35586af2eef40309d570a2fa36bde0afe",
+      "size": 2364
+    },
+    {
+      "path": "logo-design/SOURCE.json",
+      "git_blob_sha1": "fad5deb2a0b7695c544209723a6dd434bce3d7e4",
+      "size": 889
+    },
+    {
+      "path": "logo-design/agents/openai.yaml",
+      "git_blob_sha1": "a06a60903b9a943721c6db15bfb961e0a8b743dc",
+      "size": 280
+    },
+    {
+      "path": "logo-design/data/colors.csv",
+      "git_blob_sha1": "e049e2397aef251430a900dc968258fc3050da32",
+      "size": 10674
+    },
+    {
+      "path": "logo-design/data/domains.json",
+      "git_blob_sha1": "ea6098854c5c4e249da774a4dc2909298e1ab99d",
+      "size": 1168
+    },
+    {
+      "path": "logo-design/data/industries.csv",
+      "git_blob_sha1": "2c259dee0e7aa80a8d4f2c1a4f654b6233064fab",
+      "size": 13274
+    },
+    {
+      "path": "logo-design/data/styles.csv",
+      "git_blob_sha1": "a691812dec65dc08cd421a0cd9e6030aba2b8462",
+      "size": 13678
+    },
+    {
+      "path": "logo-design/references/brief-and-style.md",
+      "git_blob_sha1": "048e7e986b502990c593fced0170ed35bc6117bc",
+      "size": 1208
+    },
+    {
+      "path": "logo-design/references/generation-and-formats.md",
+      "git_blob_sha1": "aca3e3e72c1d9f200f9bc9e03923424366f46821",
+      "size": 1363
+    },
+    {
+      "path": "logo-design/references/icons-and-marks.md",
+      "git_blob_sha1": "1544993645924cb8048008c9d6174d671529a8f8",
+      "size": 703
+    },
+    {
+      "path": "logo-design/references/review-and-delivery.md",
+      "git_blob_sha1": "51862652620cfb5f270c9b258226f89907865970",
+      "size": 962
+    },
+    {
+      "path": "logo-design/scripts/search.py",
+      "git_blob_sha1": "97e2e5df6607f4665e70392d54ed3af54dcd28cd",
+      "size": 3710
+    },
+    {
+      "path": "logo-design/scripts/tests/test_search.py",
+      "git_blob_sha1": "d8fb14550f033ff5fad0e8c27951e80c8a0b366b",
+      "size": 3314
+    },
+    {
+      "path": "research-toolkit/example/handoff-demo.md",
+      "git_blob_sha1": "06ff6c9fdc144452b142b28ed3559b1311b6b19b",
+      "size": 1429
+    },
+    {
+      "path": "research-toolkit/example/handoff-demo.py",
+      "git_blob_sha1": "548da6a71be4afb0fc397866c250a05513c940c5",
+      "size": 4325
+    },
+    {
+      "path": "research-toolkit/example/index.json",
+      "git_blob_sha1": "c219066c587c1fecafc8bd14bc1f35c3337691b3",
+      "size": 795
+    },
+    {
+      "path": "research-toolkit/references/book-evidence-schema.md",
+      "git_blob_sha1": "44c97a3ca2a7107c8e8cc626746c6a0dff493146",
+      "size": 2717
+    },
+    {
+      "path": "research-toolkit/references/handoff-contract.md",
+      "git_blob_sha1": "9e3086c019aa27a050a27bb978c8813c7711b714",
+      "size": 4247
+    },
+    {
+      "path": "research-toolkit/references/handoff.schema.json",
+      "git_blob_sha1": "5a93b8abf3340f02517c81849b373a282b947f5f",
+      "size": 4641
+    },
+    {
+      "path": "research-toolkit/scripts/bookctl.py",
+      "git_blob_sha1": "52f1f7394b16a897d9b2c41e005caf46e234295e",
+      "size": 11126
+    },
+    {
+      "path": "research-toolkit/scripts/validate_handoff.py",
+      "git_blob_sha1": "d57f28dd3e0bc32b436fd76291e1cecab1cf5353",
+      "size": 17265
+    },
+    {
+      "path": "research-toolkit/tests/test_bookctl.py",
+      "git_blob_sha1": "e0db601bba197ed924d3af8e637c9859a18a61af",
+      "size": 5923
+    },
+    {
+      "path": "research-toolkit/tests/test_handoff.py",
+      "git_blob_sha1": "7ade19d030c6bad8b3a01e7a8a7c06ee9b32fb39",
+      "size": 10910
+    },
+    {
+      "path": "research-toolkit/tests/test_handoff_demo.py",
+      "git_blob_sha1": "3d416075efb557379fc03e4b996919b9bfb3c7df",
+      "size": 2406
+    },
+    {
+      "path": "social-conversation-coach/SKILL.md",
+      "git_blob_sha1": "d24d42fdf271360de6f7f7f05df879b242bb1dfb",
+      "size": 3920
+    },
+    {
+      "path": "social-conversation-coach/agents/openai.yaml",
+      "git_blob_sha1": "50412870f2f8b647b08577ea8c1dd002285f088f",
+      "size": 305
+    },
+    {
+      "path": "social-conversation-coach/evals/scenarios.json",
+      "git_blob_sha1": "2f45503d9832bdf11915cfb7028ddefbdea4f94e",
+      "size": 3261
+    },
+    {
+      "path": "social-conversation-coach/references/interaction-profile.md",
+      "git_blob_sha1": "1123fffd0e203fa5999fd9d8352a334e14c58816",
+      "size": 4486
+    },
+    {
+      "path": "social-conversation-coach/references/person-specific-evidence.md",
+      "git_blob_sha1": "b29c932b0d27094843e320b334f9cb6488a7dc2c",
+      "size": 4141
+    },
+    {
+      "path": "social-conversation-coach/references/social-conversation-evidence.md",
+      "git_blob_sha1": "2b4909c6117fec6885bfd8db05cf6a24482fd36a",
+      "size": 10124
+    },
+    {
+      "path": "sre-command-delivery/SKILL.md",
+      "git_blob_sha1": "66b4a21907fc29bf4e533af26275c69a32135625",
+      "size": 11409
+    },
+    {
+      "path": "sre-command-delivery/agents/openai.yaml",
+      "git_blob_sha1": "d23fd36178c0cb4581c22d9ffa54994239626ea7",
+      "size": 355
+    },
+    {
+      "path": "sre-command-delivery/example/checksum-crlf-delivery.md",
+      "git_blob_sha1": "2b28a5b1d35d5e7464506e1dc55d1a19d35fe107",
+      "size": 2630
+    },
+    {
+      "path": "sre-command-delivery/example/index.json",
+      "git_blob_sha1": "6c89631b4d030e8b3d79a783659513b75621ad0c",
+      "size": 2543
+    },
+    {
+      "path": "sre-command-delivery/example/offline-audit-goal-closure.md",
+      "git_blob_sha1": "37652c6eec20bf779b56b85ab6a7551de2228924",
+      "size": 1425
+    },
+    {
+      "path": "sre-command-delivery/example/terminal-paste-review.md",
+      "git_blob_sha1": "05a1976c3947a994a0231be526c703080ea5d859",
+      "size": 2027
+    },
+    {
+      "path": "sre-command-delivery/references/offline-dependency-audit.md",
+      "git_blob_sha1": "00cfaeb2873180476a46cecc27519db4ad9f8898",
+      "size": 2516
+    },
+    {
+      "path": "sre-command-delivery/references/production-script-execution.md",
+      "git_blob_sha1": "84569652dafb147cf624f355eb4527f76457cebc",
+      "size": 4063
+    },
+    {
+      "path": "sre-command-delivery/references/release-entry-validation.md",
+      "git_blob_sha1": "410232242cb83f0e680418bb5277ba332be29fa2",
+      "size": 1820
+    },
+    {
+      "path": "sre-command-delivery/references/roce-optics.md",
+      "git_blob_sha1": "21d0189cf3ff4aa9505b0b43113169a30b60aeb1",
+      "size": 3617
+    },
+    {
+      "path": "tech-mentor/SKILL.md",
+      "git_blob_sha1": "7b914450938df931743b97fa8c4a54da09e379e1",
+      "size": 6761
+    },
+    {
+      "path": "tech-mentor/agents/openai.yaml",
+      "git_blob_sha1": "d962e5eb4356330335d6968762ac592a1f213292",
+      "size": 327
+    },
+    {
+      "path": "tech-mentor/evals/scenarios.json",
+      "git_blob_sha1": "dea23abe2ecccac7806c78b98d4931cfd1cc4fc6",
+      "size": 3239
+    },
+    {
+      "path": "tech-mentor/example/index.json",
+      "git_blob_sha1": "5e97f69271857f333a43f78d56e7a699ef27c14b",
+      "size": 674
+    },
+    {
+      "path": "tech-mentor/example/topics/metallb.md",
+      "git_blob_sha1": "1a158a6dfa14d497a6eeaebee81c94589d6a0a76",
+      "size": 1932
+    },
+    {
+      "path": "tech-mentor/references/decision-framework.md",
+      "git_blob_sha1": "2e762931501c7b02284ab8cb08de7dbb25fb6b84",
+      "size": 2504
+    },
+    {
+      "path": "tech-mentor/references/learning-loops.md",
+      "git_blob_sha1": "e18401aeeb49cf4cd322d690149014e776e6d931",
+      "size": 7661
+    },
+    {
+      "path": "tech-mentor/references/research-basis.md",
+      "git_blob_sha1": "98b36fd384a096d582870ad97d78ee9d66a7c147",
+      "size": 3049
+    },
+    {
+      "path": "tech-mentor/references/topic-template.md",
+      "git_blob_sha1": "917dddf0c6bc575acabb37ddaf33e915b0f3dd79",
+      "size": 1152
+    },
+    {
+      "path": "tech-mentor/scripts/validate_topic.py",
+      "git_blob_sha1": "a9875d3bc49791f7ee453c51a014b28649ebbd38",
+      "size": 4542
+    },
+    {
+      "path": "tech-mentor/tests/test_validate_topic.py",
+      "git_blob_sha1": "62567ddd38289bffeff9d419fafec5df1e038968",
+      "size": 1698
+    },
+    {
+      "path": "wechat-account-archive/SKILL.md",
+      "git_blob_sha1": "0c4421fb830adc48b11b97a8fc4e6c15339881cc",
+      "size": 6133
+    },
+    {
+      "path": "wechat-account-archive/agents/openai.yaml",
+      "git_blob_sha1": "4d5d854c6f498145968862108e9b6edf39c3e867",
+      "size": 397
+    },
+    {
+      "path": "wechat-account-archive/example/index.json",
+      "git_blob_sha1": "2d2437a7a95d36c3749e3ceacb4e544c29e65806",
+      "size": 1724
+    },
+    {
+      "path": "wechat-account-archive/example/link-reading.md",
+      "git_blob_sha1": "a37952e83ce2a749a54a6c4affeab7eef5e8d416",
+      "size": 1922
+    },
+    {
+      "path": "wechat-account-archive/example/validation.md",
+      "git_blob_sha1": "45b09552874a7a673226697503e3f308a2c012c4",
+      "size": 2974
+    },
+    {
+      "path": "wechat-account-archive/references/backend.md",
+      "git_blob_sha1": "df39e8c014476580828a8c4d5539fb9325118968",
+      "size": 8080
+    },
+    {
+      "path": "wechat-account-archive/references/completeness.md",
+      "git_blob_sha1": "1f857c6b4201c1c969d054f65cd24335651cdd03",
+      "size": 4592
+    },
+    {
+      "path": "wechat-account-archive/scripts/archive.py",
+      "git_blob_sha1": "1a1db6b4a3c4fb0bb19ce566bd0da1477bdecfab",
+      "size": 52320
+    },
+    {
+      "path": "wechat-account-archive/scripts/download_list.py",
+      "git_blob_sha1": "62922b66f13b89da0c3268e4e3802bc4d9fc7521",
+      "size": 5861
+    },
+    {
+      "path": "wechat-account-archive/scripts/export_archive.py",
+      "git_blob_sha1": "02e2df0cdc76663e4e25115230b4bd36be890f98",
+      "size": 6787
+    },
+    {
+      "path": "wechat-account-archive/scripts/prepare_login.ps1",
+      "git_blob_sha1": "d203b7aa464d80ca71ebc13c898b54353711bd47",
+      "size": 2031
+    },
+    {
+      "path": "wechat-account-archive/tests/test_archive.py",
+      "git_blob_sha1": "a8d9247260df880e923104f1b2ced1f8083f4ad0",
+      "size": 21531
+    },
+    {
+      "path": "wechat-account-archive/tests/test_public_download.py",
+      "git_blob_sha1": "4bcc811a02d1dff7a4e35dd8adcce842276197df",
+      "size": 5718
+    },
+    {
+      "path": "scripts/skill_release.py",
+      "git_blob_sha1": "843e6a236f33b2676879eaae07d5422fad323be9",
+      "size": 14916
+    }
+  ],
+  "repository_support_files": [
+    "scripts/skill_release.py"
+  ]
+}

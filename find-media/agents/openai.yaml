@@ -1,0 +1,4 @@
+interface:
+  display_name: "找作品与片段出处"
+  short_description: "凭描述、截图或混剪寻找影视动漫出处，也能逐步找回记忆中的游戏"
+  default_prompt: "使用 $find-media 帮我找作品、片段出处或记忆中的游戏，并说明证据和未解决的部分。"

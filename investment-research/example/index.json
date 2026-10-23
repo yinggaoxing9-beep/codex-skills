@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "quant-engineering-interface",
+      "kind": "observed",
+      "files": [
+        "quant-engineering.md"
+      ],
+      "scenario": "接入现有量化工程投研链前核对真实接口",
+      "preconditions": "重新核对指定 checkout、分支、源码版本与任务授权",
+      "expected": "候选、注册表和分数能力可区分；命名、期限和校准缺口明确，未运行业务入口",
+      "limits": "源码检查不证明运行时可用或盈利；不能继承授权或把历史状态当当前事实",
+      "source": "2026-10-22 本地源码只读核验；未复制第三方代码",
+      "verified_at": "2026-10-22"
+    }
+  ]
+}

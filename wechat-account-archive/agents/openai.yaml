@@ -1,0 +1,6 @@
+interface:
+  display_name: "微信公众号读取与归档"
+  short_description: "直接读取微信公众号文章链接，或按公众号名归档历史文章并核查缺失"
+  default_prompt: "使用 $wechat-account-archive 读取我提供的微信文章链接；如果提供公众号名并要求归档，则采集历史文章并报告缺失。"
+policy:
+  allow_implicit_invocation: true

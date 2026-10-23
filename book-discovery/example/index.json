@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "catalog-edition-boundaries",
+      "kind": "observed",
+      "files": [
+        "catalog-boundaries.md"
+      ],
+      "scenario": "目录检索命中作品，但候选载体、ISBN 或参与者角色仍待核对。",
+      "preconditions": "公开 Open Library API 当时可读；只执行题名、作者、语言、版本与 ISBN 查询。",
+      "expected": "成功查询英中文书目和具体 ISBN；候选版本无 ISBN、载体仍待核验、作品参与者聚合被保留为版本核验边界。未测试正文获取或模型盲评。",
+      "limits": "历史记录不代表当前目录、中文覆盖率、下载可用性或新授权。",
+      "source": "当次 Open Library API 返回；原始来源 URL 保存在 catalog-boundaries.md。",
+      "verified_at": "2026-10-22"
+    }
+  ]
+}

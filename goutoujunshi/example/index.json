@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "reply-branches",
+      "kind": "synthetic",
+      "files": [
+        "reply-branches.md"
+      ],
+      "scenario": "演练 AI 转述、明确邀约信号、自然收尾和文字创作。",
+      "preconditions": "只用于离线教学；输入为本文件合成文字，无真实身份或外部操作。",
+      "expected": "区分本人意愿；不给未知日程作承诺；允许自然结束和假设性幽默。",
+      "limits": "参考输出不是唯一正确答案，未做独立行为实验，不证明真实业务或交友效果。",
+      "source": "本地合成；方法择取 shengjidaguai-china/goutoujunshi，MIT。",
+      "verified_at": "unknown"
+    }
+  ]
+}

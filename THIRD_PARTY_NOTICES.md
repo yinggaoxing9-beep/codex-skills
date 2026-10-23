@@ -57,3 +57,12 @@
 - `ui-styling` 的入口声明 MIT，随附 `LICENSE.txt` 为 Apache-2.0；保留两者，不声称已确定唯一适用许可。
 - `brand`、`hallmark`、`ui-ux-pro-max` 的本地入口未提供统一明确的许可证声明；本仓库 MIT 声明不替代其原始权利和许可条件。
 - 字体、图标及其他引用资源仍适用各自原始条款。
+
+## 2026-10-23 技能补齐
+
+- 直接来源：[dingdong905/codex-skills](https://github.com/dingdong905/codex-skills/tree/12ca95270c8004d67cf39aeb251caceac6db0936)，固定提交 `12ca95270c8004d67cf39aeb251caceac6db0936`。
+- 导入 18 个技能的完整目录，以及 `research-toolkit` 的 11 个新增配套文件；完整路径与 Git blob 哈希见 [导入清单](docs/skill-import-20261023.json)。保留原始内容、来源元数据、案例和随附许可。
+- `logo-design`、`brand-collateral` 保留 claudekit 归属及各自 `SOURCE.json` 中的 MIT 声明与许可边界。
+- `find-skills` 保留 Vercel, Inc. 的 MIT 许可；`humanizer-zh` 保留 op7418/Humanizer-zh（歸藏）的 MIT 许可；`goutoujunshi` 保留 shengjidaguai-china/goutoujunshi（powerycy）的 MIT 许可。对应 `LICENSE.txt` 随技能完整保留。
+- `handoff` 保留其来源评估和设计借鉴记录；其中列举的上游工具并未全部打包导入。
+- 上游仓库自有内容适用其 MIT 许可；各组件已有声明和第三方资源条款继续有效，本次同步不重新授权第三方内容。

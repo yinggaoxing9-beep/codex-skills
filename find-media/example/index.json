@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "anime-live",
+      "kind": "observed",
+      "files": [
+        "anime-live.json"
+      ],
+      "scenario": "公开截图到动漫数据库锚点核验",
+      "preconditions": "官方 API 演示图、可联网、局部向量依赖",
+      "expected": "真实向量查询和预览对照成功；集数独立未确认",
+      "limits": "单张公开演示，不是混剪准确率；预览临时；地区可播未知",
+      "source": "trace.moe API 官方文档公开 demo URL；无图片拷贝发布",
+      "verified_at": "2026-10-21"
+    },
+    {
+      "id": "plot-title-only",
+      "kind": "observed",
+      "files": [
+        "plot-title-only.json"
+      ],
+      "scenario": "合成剧情描述检索影视",
+      "preconditions": "可读取官方公开剧情页",
+      "expected": "片名确认，时间保持未知",
+      "limits": "未看原片，未证明当地可播",
+      "source": "Paramount official synopsis; input paraphrased synthetic",
+      "verified_at": "2026-10-21"
+    },
+    {
+      "id": "game-feedback",
+      "kind": "synthetic",
+      "files": [
+        "game-candidate-feedback.json"
+      ],
+      "scenario": "模糊旧手机线索及否定反馈更新",
+      "preconditions": "线索合成；真实在线候选资料",
+      "expected": "候选仍 unresolved，否定原因保留，不默认 J2ME",
+      "limits": "不是用户真实童年游戏答案；否定是合成反馈",
+      "source": "MobyGames platform/release/screenshot pages and contemporary Pocket Gamer; synthetic dialogue",
+      "verified_at": "2026-10-21"
+    },
+    {
+      "id": "validation",
+      "kind": "observed",
+      "files": [
+        "validation.md"
+      ],
+      "scenario": "交付验证的实际范围与缺口",
+      "preconditions": "本次测试环境和公开网络",
+      "expected": "离线 fixture、真实 FFmpeg、在线识别分别报告",
+      "limits": "不承诺未来服务状态或识别率",
+      "source": "本次 unittest、官方校验、在线检索与人工画面对照",
+      "verified_at": "2026-10-21"
+    }
+  ]
+}

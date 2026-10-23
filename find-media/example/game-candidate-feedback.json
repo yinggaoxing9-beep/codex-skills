@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "task_type": "game",
+  "inputs": [
+    {
+      "type": "synthetic_description",
+      "source": "An old mobile fantasy combat game with equipment and possibly dragons; date, OS, controls, view unknown."
+    }
+  ],
+  "segments": [
+    {
+      "id": "candidate-1",
+      "input_range": null,
+      "work": {
+        "name": "Dungeon Hunter",
+        "aliases": [
+          "Dark Quest"
+        ],
+        "ids": {
+          "mobygames": 123573
+        },
+        "platform": [
+          "iPhone",
+          "Android"
+        ],
+        "year": {
+          "iPhone": 2009,
+          "Android": 2010
+        }
+      },
+      "status": "unresolved",
+      "confirmation": {
+        "title": "unverified",
+        "episode": "unverified",
+        "time": "unverified"
+      },
+      "confirmation_evidence": {},
+      "clue_matches": [
+        "资料支持手机动作 RPG、装备更换"
+      ],
+      "clue_conflicts": [],
+      "clue_unknowns": [
+        "是不是用户玩过的游戏",
+        "用户平台/年代/控制方式",
+        "龙是否为关键情节"
+      ],
+      "evidence": [
+        {
+          "id": "gameplay",
+          "source": "https://www.pocketgamer.com/dungeon-hunter/gameplay-details-and-video-of-gamelofts-rpg-dungeon-hunter-revealed/",
+          "checked_at": "2026-10-21",
+          "observation": "Contemporary 2009 iPhone report describes top-down action, virtual D-pad/touch attacks and collectible equipment."
+        },
+        {
+          "id": "release",
+          "source": "https://www.mobygames.com/game/123573/dungeon-hunter/releases/",
+          "checked_at": "2026-10-21",
+          "observation": "Release page lists iPhone Sep 17 2009 and Android May 20 2010. Screenshot page title mentions 2009 but that must not be mistaken for Android release date."
+        },
+        {
+          "id": "screenshot",
+          "source": "https://www.mobygames.com/game/123573/dungeon-hunter/screenshots/android/965133/",
+          "checked_at": "2026-10-21",
+          "observation": "Screenshot page explicitly labels Android / Warcry special attack. Viewed linked CDN image in browser: oblique top-down scene, virtual direction control on left, action controls right, equipment-bearing player. An image is not proof this user played it.",
+          "image_url": "https://cdn.mobygames.com/screenshots/16173966-dungeon-hunter-android-warcry-special-attack.png"
+        }
+      ],
+      "excluded": true,
+      "exclusion_reason": "Synthetic second-turn feedback: user rejects this candidate because UI does not match."
+    }
+  ],
+  "process": [
+    {
+      "provider": "MobyGames overview",
+      "status": "unreadable",
+      "reason": "403",
+      "checked_at": "2026-10-21"
+    },
+    {
+      "provider": "connected search and browser",
+      "status": "ok",
+      "checked_at": "2026-10-21"
+    }
+  ],
+  "coverage": {
+    "mode": "synthetic two-turn exercise",
+    "searched": [
+      "mobile ARPG sources, screenshot and platform release page"
+    ],
+    "excluded_candidates": [
+      "Dungeon Hunter"
+    ],
+    "os_assumed": false
+  },
+  "unresolved": [
+    "此合成线索没有已知答案；不破解用户举的真实旧游戏"
+  ],
+  "next_steps": [
+    "保留排除候选，下一轮优先核实实体按键还是触屏及横版还是俯视，再查对应平台；不重复推荐已否定候选"
+  ],
+  "clues": {
+    "clear": [
+      "手机上玩",
+      "可以换装备"
+    ],
+    "approximate": [
+      "奇幻冒险",
+      "打怪掉装备",
+      "似乎有龙"
+    ],
+    "uncertain": [
+      "年份",
+      "系统",
+      "视角",
+      "操作"
+    ]
+  }
+}

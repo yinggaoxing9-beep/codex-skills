@@ -1,0 +1,4 @@
+interface:
+  display_name: "狗头军师·接话与邀约"
+  short_description: "根据真实互动处理难回消息、邀约与后续选择，保留主动表达和判断余地"
+  default_prompt: "使用 $goutoujunshi 看看这段互动，先给一条适合我口吻的回复，再说明需要观察的下一步。"

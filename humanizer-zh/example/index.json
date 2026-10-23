@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "meaning-preservation",
+      "kind": "synthetic",
+      "files": [
+        "meaning-preservation.md"
+      ],
+      "scenario": "核对文字润色是否保留事实、限定和技术字段。",
+      "preconditions": "只用于离线教学；输入为本文件合成文字，无真实身份或外部操作。",
+      "expected": "保持原有范围、不确定性、完成状态、配置字段和网址。",
+      "limits": "参考输出不是唯一正确答案，未做独立行为实验，不证明真实业务或交友效果。",
+      "source": "本地合成；编辑原则择取 op7418/Humanizer-zh，MIT。",
+      "verified_at": "unknown"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Existing research artifact handoff wrapper v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "version",
+    "kind",
+    "as_of",
+    "available_at",
+    "valid_until",
+    "producer",
+    "versions",
+    "scope",
+    "status",
+    "eligibility",
+    "evidence",
+    "counterevidence",
+    "gaps",
+    "upstream",
+    "payload",
+    "created_at",
+    "research_mode"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "research-handoff/1"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "kind": {
+      "enum": [
+        "idea",
+        "factor",
+        "evidence",
+        "valuation",
+        "probability",
+        "research_summary"
+      ]
+    },
+    "as_of": {
+      "$ref": "#/$defs/time"
+    },
+    "available_at": {
+      "$ref": "#/$defs/time"
+    },
+    "valid_until": {
+      "$ref": "#/$defs/time"
+    },
+    "producer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "skill",
+        "sha256"
+      ],
+      "properties": {
+        "skill": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/hash"
+        }
+      }
+    },
+    "versions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "data",
+        "code",
+        "model"
+      ],
+      "properties": {
+        "data": {
+          "$ref": "#/$defs/version"
+        },
+        "code": {
+          "$ref": "#/$defs/version"
+        },
+        "model": {
+          "$ref": "#/$defs/version"
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "entities",
+        "target",
+        "horizon_trading_days",
+        "conditions",
+        "use"
+      ],
+      "properties": {
+        "entities": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "horizon_trading_days": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "use": {
+          "enum": [
+            "return",
+            "risk",
+            "context",
+            "interaction",
+            "evidence"
+          ]
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "candidate",
+        "valid",
+        "unknown",
+        "rejected",
+        "suspended",
+        "expired"
+      ]
+    },
+    "eligibility": {
+      "enum": [
+        "research",
+        "shadow",
+        "production"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ref"
+      }
+    },
+    "counterevidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ref"
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "upstream": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ref"
+      }
+    },
+    "payload": {
+      "type": "object"
+    },
+    "created_at": {
+      "$ref": "#/$defs/time"
+    },
+    "research_mode": {
+      "enum": [
+        "retrospective",
+        "prospective"
+      ]
+    }
+  },
+  "$defs": {
+    "time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "version": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "version",
+        "sha256",
+        "reference",
+        "available_at"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "reference": {
+          "type": "string",
+          "minLength": 1
+        },
+        "available_at": {
+          "$ref": "#/$defs/time"
+        }
+      }
+    }
+  }
+}

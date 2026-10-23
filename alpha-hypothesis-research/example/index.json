@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "quant-engineering-high-alert",
+      "kind": "observed",
+      "files": [
+        "quant-engineering.md"
+      ],
+      "scenario": "在量化工程仓库续做高位预警Alpha研究时定位现有模块与能力边界。",
+      "preconditions": "核验当前checkout、仓库规则、CLI、所需本地Parquet档案及本次运行授权。",
+      "expected": "复用日线信号和事件评估；缺PIT/分钟数据的候选保持未检验。源码接口和11项信号测试、13项快速检查已核验。",
+      "limits": "不证明盈利或生产可用；具体路径、阈值、90项预算和数据范围不是其他任务默认值，完整研究结果仍以项目产物为准。",
+      "source": "量化工程stock/research/high_alert_signals.py、high_alert_backtest.py、stock/cli/high_alert_backtest.py及治理/任务记录。未复制外部代码。",
+      "verified_at": "2026-10-15"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+Pillow>=11.3,<13
+# Optional bundled FFmpeg if an existing executable is unavailable.
+imageio-ffmpeg==0.6.0

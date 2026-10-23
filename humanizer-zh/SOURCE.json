@@ -1,0 +1,25 @@
+{
+  "sourceRepository": "https://github.com/op7418/Humanizer-zh",
+  "sourceCommit": "f4518a8eab97b8bfebc66a89d34320a89bef6930",
+  "importedAt": "2026-10-18",
+  "upstreamAttribution": "歸藏",
+  "licenseStatus": "MIT; upstream LICENSE retained verbatim as LICENSE.txt",
+  "sourceFiles": [
+    {
+      "path": "SKILL.md",
+      "sha256": "95627fd4437d886f98032ccc62d79136e6310f1fc04e354bb86431795ff206df"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "aa00e74769e1b9d8e7fa7094dbfcca9b129a0ded6dce1cf4da050b99146d2fa7"
+    }
+  ],
+  "adaptations": [
+    "Compact meaning-preserving Chinese editing entrypoint",
+    "Keep optional issue-driven checks; move concrete teaching to example/",
+    "No business decisions, image pipeline or detector claims"
+  ],
+  "upstreamScriptsImported": false,
+  "runtimeDependenciesAdded": [],
+  "validationBoundary": "Structure and local packaging only; no independent behavioral or human conversion evidence."
+}

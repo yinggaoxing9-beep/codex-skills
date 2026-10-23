@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "cross-task-handoff",
+      "kind": "synthetic",
+      "files": [
+        "handoff-demo.py",
+        "handoff-demo.md"
+      ],
+      "scenario": "将金融账本交接和文献摘要交接接到同一版本与门禁契约",
+      "preconditions": "完整源库和Python标准库；输出新目录，引用现有合成账本fixture；只作工程验证",
+      "expected": "两种native载荷保持原格式，通过同一外层与本地哈希校验；unknown不变为数值",
+      "limits": "不代表真实来源已核验、模型行为通过或投资研究有效；30分钟仅为演示时效",
+      "source": "本仓库原有合成v2账本与明确空文献envelope；不含真实研究结论",
+      "verified_at": "2026-10-22"
+    }
+  ]
+}

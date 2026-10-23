@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "task_type": "plot",
+  "inputs": [
+    {
+      "type": "synthetic_description",
+      "source": "A man discovers his town is a studio set and his life is broadcast."
+    }
+  ],
+  "segments": [
+    {
+      "id": "plot",
+      "input_range": null,
+      "work": {
+        "name": "楚门的世界",
+        "aliases": [
+          "The Truman Show"
+        ],
+        "year": 1998
+      },
+      "status": "title_only",
+      "confirmation": {
+        "title": "confirmed",
+        "episode": "unverified",
+        "time": "unverified"
+      },
+      "confirmation_evidence": {
+        "title": [
+          "official"
+        ]
+      },
+      "evidence": [
+        {
+          "id": "official",
+          "source": "https://www.paramount.com/movies/the-truman-show",
+          "checked_at": "2026-10-21",
+          "observation": "Official synopsis confirms protagonist's town is a studio set and his whole life a TV show; page gives 1998."
+        }
+      ],
+      "watch_entries": [
+        {
+          "url": "https://www.paramount.com/movies/the-truman-show",
+          "kind": "work_page",
+          "region": "unknown",
+          "checked_at": "2026-10-21",
+          "availability": "unknown"
+        }
+      ]
+    }
+  ],
+  "process": [
+    {
+      "provider": "connected search",
+      "status": "ok",
+      "checked_at": "2026-10-21"
+    }
+  ],
+  "coverage": {
+    "mode": "text",
+    "searched": "Distinctive plot, official synopsis checked",
+    "video_analyzed": false
+  },
+  "unresolved": [
+    "无具体片段输入，未定位场景时间",
+    "未核验地区可播"
+  ],
+  "next_steps": [
+    "若需定位某个镜头，可提供该截图或片段"
+  ]
+}

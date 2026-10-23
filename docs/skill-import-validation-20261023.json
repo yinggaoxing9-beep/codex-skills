@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-23",
+  "source_commit": "12ca95270c8004d67cf39aeb251caceac6db0936",
+  "added_skills": 18,
+  "personal_skills_after_import": 44,
+  "source_files_verified": 186,
+  "skill_frontmatter": {
+    "passed": 18,
+    "failed": 0
+  },
+  "markdown_links": {
+    "broken": 0
+  },
+  "existing_skill_files": "preserved; research-toolkit received only new files",
+  "test_suites": [
+    {
+      "path": "brand-collateral/scripts/tests",
+      "tests": 6,
+      "status": "pass"
+    },
+    {
+      "path": "logo-design/scripts/tests",
+      "tests": 6,
+      "status": "pass"
+    },
+    {
+      "path": "evidence-driven-valuation/scripts",
+      "tests": 59,
+      "status": "pass"
+    },
+    {
+      "path": "fundamental-signal-intake/scripts",
+      "tests": 5,
+      "status": "pass"
+    },
+    {
+      "path": "handoff/tests",
+      "tests": 10,
+      "status": "pass"
+    },
+    {
+      "path": "tech-mentor/tests",
+      "tests": 4,
+      "status": "pass"
+    },
+    {
+      "path": "wechat-account-archive/tests",
+      "tests": 48,
+      "status": "pass"
+    },
+    {
+      "path": "find-media/tests",
+      "tests": 24,
+      "skipped_groups": 1,
+      "skip_reason": "FFmpeg not installed; actual video processing group skipped",
+      "status": "pass"
+    },
+    {
+      "path": "research-toolkit/tests",
+      "tests": 41,
+      "status": "pass"
+    }
+  ],
+  "tests_run": 203,
+  "test_failures": 0,
+  "installer_checks": [
+    "Full dry run resolved 44 skills",
+    "Selective dry run of book-discovery and investment-research resolved 7 unique skills including dependencies"
+  ],
+  "limits": [
+    "Offline structure, content-integrity and unit checks only",
+    "FFmpeg video processing, device connections, account login and external service behavior were not validated",
+    "Repository-level scripts/skill_release.py supports the source-checkout handoff demo; it is not a skill and is not installed into the runtime"
+  ]
+}

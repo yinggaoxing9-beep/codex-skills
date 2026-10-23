@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文表达润色"
+  short_description: "按作者口吻编辑中文草稿，减少模板表达，保留事实与确定程度"
+  default_prompt: "使用 $humanizer-zh 润色这段中文，保持原意、事实和我的口吻，只修改确有问题的表达。"

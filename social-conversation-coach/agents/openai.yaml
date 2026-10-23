@@ -1,0 +1,4 @@
+interface:
+  display_name: "社交理解与自然交流"
+  short_description: "依据实际互动更新沟通偏好，调整聊天、表情与内容，并复盘验证"
+  default_prompt: "使用 $social-conversation-coach 分析这段互动，区分证据和猜测，给出适合双方的自然回复。"

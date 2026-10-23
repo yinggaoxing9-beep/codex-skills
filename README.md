@@ -11,7 +11,7 @@
 - Codex 上下文治理与 Token 节省
 - 长期记忆整理、冲突处理与过期管理
 
-当前收录 **26 个个人 Skills**，包括 **8 个 PPT 技能**和 **1 个 HTML 报告技能**，同步日期为 2026-10-22。系统内置和插件附带的技能不包含在本仓库中。
+当前收录 **44 个个人 Skills**，包括 **8 个 PPT 技能**和 **1 个 HTML 报告技能**，同步日期为 2026-10-23。系统内置和插件附带的技能不包含在本仓库中。
 
 技能调用名保持英文；中文增强入口和保留的上游英文入口并存，必要的英文关键词用于兼容中英文自动触发。
 
@@ -45,10 +45,32 @@
 | `hallmark` | 页面设计、审计、重设计与参考提取 | `使用 $hallmark 改进这个页面的视觉设计` |
 | `ui-styling` | shadcn/ui、Tailwind 与可访问界面实现 | `使用 $ui-styling 实现响应式界面` |
 | `ui-ux-pro-max` | UI/UX 决策、风格、配色、字体与交互 | `使用 $ui-ux-pro-max 设计产品管理界面` |
+| `alpha-hypothesis-research` | 量化猜想、交易信号、回测与因子研究 | `使用 $alpha-hypothesis-research 检验这个交易信号` |
+| `fundamental-signal-intake` | 上市公司微观领先事实与证据账本 | `使用 $fundamental-signal-intake 整理公司的经营证据` |
+| `evidence-driven-valuation` | 证据驱动的经营变量分析与反向估值 | `使用 $evidence-driven-valuation 检查估值假设` |
+| `investment-research` | 跨步骤投研编排与研究交接 | `使用 $investment-research 串联这次投资研究` |
+| `logo-design` | Logo 设计、风格检索与矢量交付 | `使用 $logo-design 设计品牌字标` |
+| `brand-collateral` | 名片、信纸、包装与品牌展示稿 | `使用 $brand-collateral 制作品牌名片` |
+| `humanizer-zh` | 中文润色、减少套话并保留作者口吻 | `使用 $humanizer-zh 润色这段草稿` |
+| `feishu-document-output` | 适合复制或导入飞书的中文文档 | `使用 $feishu-document-output 整理部署指南` |
+| `handoff` | 本地交接包、续做首句与接手核验 | `使用 $handoff 保存当前任务检查点` |
+| `find-skills` | 外部技能发现、比较与适配评估 | `使用 $find-skills 查找适合这个需求的技能` |
+| `tech-mentor` | 显式启动的对话教学、练习与验收 | `使用 $tech-mentor 带我学习 Kubernetes` |
+| `sre-command-delivery` | 服务器、集群与网络排障命令交付 | `使用 $sre-command-delivery 根据错误给出排查命令` |
+| `android-phone-ops` | Android 实机连接、权限与 APK 排障 | `使用 $android-phone-ops 排查手机连接` |
+| `wechat-account-archive` | 微信文章读取、账号历史归档与补采 | `使用 $wechat-account-archive 读取这篇文章` |
+| `book-discovery` | 荐书、版本核验与阅读入口查找 | `使用 $book-discovery 找适合入门的书` |
+| `find-media` | 根据描述、截图或片段寻找影视与游戏 | `使用 $find-media 查找这张截图的出处` |
+| `social-conversation-coach` | 聊天分析、自然接话与沟通复盘 | `使用 $social-conversation-coach 分析这段互动` |
+| `goutoujunshi` | 成人交友中的回复、邀约与后续选择 | `使用 $goutoujunshi 判断这段互动的下一步` |
 
 PPT 任务类型明确时可以直接调用对应专业技能；类型不明确时从 `presentation-studio` 开始。`deck-review` 用于审阅已有演示，`html-report` 用于独立 HTML 报告。
 
 上述目录保存本地安装版本及其配套脚本、参考资料和资产。部分上游设计技能仍引用外部工具或其他技能，具体依赖以各自入口为准。
+
+2026-10-23 从 [dingdong905/codex-skills](https://github.com/dingdong905/codex-skills/tree/12ca95270c8004d67cf39aeb251caceac6db0936) 固定版本补齐上述 18 个技能，并为 `research-toolkit` 添加 11 个找书与交接配套文件。原有 26 个技能的文件保持不变，包括 `design` 和已升级的 PPT/HTML 内容。来源与逐文件哈希见 [导入清单](docs/skill-import-20261023.json)，检查结果见 [验收记录](docs/skill-import-validation-20261023.json)。
+
+选择性安装时，安装脚本会补齐新增投研、找书技能的仓库内依赖。`find-media` 的视频处理需要 FFmpeg，图片处理需要 Pillow；其他技能的设备、账户和联网能力按实际任务准备。安装技能不代表这些外部环境已配置完成。
 
 ## 论文研究混合架构
 
@@ -83,7 +105,7 @@ PPT 任务类型明确时可以直接调用对应专业技能；类型不明确�
 .\scripts\install.ps1
 ```
 
-默认安装到 `$env:USERPROFILE\.codex\skills`。安装后重新打开 Codex，或开始一个新任务，让技能列表重新加载。
+默认安装到 `$env:USERPROFILE\.codex\skills`。安装后可在下一轮调用；若技能列表未刷新，开始新聊天。
 
 只安装指定技能：
 
