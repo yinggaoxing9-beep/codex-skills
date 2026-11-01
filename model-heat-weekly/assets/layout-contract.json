@@ -1,0 +1,7 @@
+{
+  "usage": {"title":"OpenRouter 用量","tag":"采用热度","accent":"#3973ff","headers":["全球模型名称","排名","7日 Tokens","周环比","中国开源模型名称","排名","7日 Tokens","周环比"]},
+  "releases": {"title":"本周上新","tag":"新品雷达","accent":"#8550ee","headers":["全球新模型名称","排名","上线","7日 Tokens","中国开源新模型名称","排名","上线","7日 Tokens"]},
+  "capability": {"title":"能力对照","tag":"官方基准","accent":"#8550ee","headers":["全球模型名称","排名","智力","编码/Agent","中国开源模型名称","排名","智力","编码/Agent"]},
+  "huggingface": {"title":"Hugging Face","tag":"下载热度","accent":"#03aaa8","headers":["全球模型名称","排名","30日下载","本周新增","中国开源模型名称","排名","30日下载","本周新增"]},
+  "community": {"title":"GitHub 与情报","tag":"社区热度","accent":"#c66b00","headers":["全球模型仓库","排名","累计 Stars","本周新增","中国开源模型仓库","排名","累计 Stars","本周新增"]}
+}

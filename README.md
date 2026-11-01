@@ -11,7 +11,7 @@
 - Codex 上下文治理与 Token 节省
 - 长期记忆整理、冲突处理与过期管理
 
-当前收录 **44 个个人 Skills**，包括 **8 个 PPT 技能**和 **1 个 HTML 报告技能**，同步日期为 2026-10-23。系统内置和插件附带的技能不包含在本仓库中。
+当前收录 **45 个个人 Skills**，包括 **8 个 PPT 技能**、**1 个 HTML 报告技能**和 **1 个模型热度周报技能**，最近更新于 2026-11-01。系统内置和插件附带的技能不包含在本仓库中。
 
 技能调用名保持英文；中文增强入口和保留的上游英文入口并存，必要的英文关键词用于兼容中英文自动触发。
 
@@ -24,6 +24,7 @@
 | `biomedical-evidence` | 医学指南、综述、试验、绝对风险与安全边界 | `使用 $biomedical-evidence 评估改善睡眠的证据` |
 | `research-toolkit` | 共享检索、规范化、去重和标识符核验工具层 | `使用 $research-toolkit 核验这些 DOI 和 PMID` |
 | `evidence-research` | 当前、多来源、可审计的信息研究 | `使用 $evidence-research 调查……` |
+| [`model-heat-weekly`](model-heat-weekly/SKILL.md) | 模型热度周报：五板块双榜、统计口径核验、Markdown 与 5 张模板配图 | `使用 $model-heat-weekly 生成最近完整7天的模型热度周报，交付.md和5张图` |
 | `stock-analysis` | 上市公司基本面、估值和财务取证 | `使用 $stock-analysis 分析腾讯最新财报` |
 | `financial-analyst` | 财务比率、DCF、预算差异与预测 | `使用 $financial-analyst 建立 DCF` |
 | `research-summarizer` | 已提供论文、报告和网页的结构化摘要 | `使用 $research-summarizer 比较这些报告` |
@@ -72,6 +73,17 @@ PPT 任务类型明确时可以直接调用对应专业技能；类型不明确�
 
 选择性安装时，安装脚本会补齐新增投研、找书技能的仓库内依赖。`find-media` 的视频处理需要 FFmpeg，图片处理需要 Pillow；其他技能的设备、账户和联网能力按实际任务准备。安装技能不代表这些外部环境已配置完成。
 
+### 模型热度周报
+
+`model-heat-weekly` 按 OpenRouter 用量、本周上新、能力对照、Hugging Face、GitHub 与情报的顺序生成报告。附带五张参考模板、固定表头、日期计算、数据验证和渲染脚本；图表说明放在图片下方，列明来源、统计周期及环比基期。参考图片中的模型和数字只用于展示版式，每期均重新核验数据。
+
+```text
+使用 $model-heat-weekly，生成最近完整7天的模型热度周报，交付.md和5张配图。
+使用 $model-heat-weekly，生成2026年10月23—29日的模型热度周报。
+```
+
+需要同步飞书时，在请求中附上目标文档链接。默认采用 UTC 完整日并说明北京时间边界；日期起止均包含当天，22—29日会识别为8天。渲染依赖 Node.js 和 sharp，飞书预备文件另用 marked；运行环境与数据结构见 [脚本说明](model-heat-weekly/references/data-and-rendering.md)。
+
 ## 论文研究混合架构
 
 论文研究采用“专业 Skill + 统一工具层 + 薄编排器 + 评测体系”：
@@ -111,6 +123,12 @@ PPT 任务类型明确时可以直接调用对应专业技能；类型不明确�
 
 ```powershell
 .\scripts\install.ps1 -Skills evidence-research,stock-analysis
+```
+
+只安装模型热度周报技能：
+
+```powershell
+.\scripts\install.ps1 -Skills model-heat-weekly
 ```
 
 只安装这次更新的 PPT 和 HTML 技能：

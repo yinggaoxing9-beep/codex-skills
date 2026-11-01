@@ -1,0 +1,6 @@
+interface:
+  display_name: "模型热度周报"
+  short_description: "调研五类模型热度，核验统计周期与来源，生成双榜配图及Markdown周报"
+  default_prompt: "使用 $model-heat-weekly 生成最近完整7天的模型热度周报，按五张模板制作全球/中国开源双榜，交付Markdown和配图。"
+policy:
+  allow_implicit_invocation: true

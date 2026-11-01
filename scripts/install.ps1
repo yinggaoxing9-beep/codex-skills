@@ -37,6 +37,7 @@ $manifest = @(
     "investment-research",
     "logo-design",
     "memory-curator",
+    "model-heat-weekly",
     "pitch-deck",
     "presentation-studio",
     "research-presentation",
